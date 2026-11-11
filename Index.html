@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyHub - Student Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 StudyHub</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#notes">Notes</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h2>Welcome to StudyHub!</h2>
+    <p>Learn New Skills. Build Your Future.</p>
+    <button onclick="goToCourses()">Start Learning</button>
+</section>
+
+<section id="courses">
+    <h2>Our Courses 🎓</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>HTML</h3>
+            <p>Learn website development.</p>
+            <button onclick="showCourse('HTML')">Explore</button>
+        </div>
+
+        <div class="card">
+            <h3>CSS</h3>
+            <p>Learn website designing.</p>
+            <button onclick="showCourse('CSS')">Explore</button>
+        </div>
+
+        <div class="card">
+            <h3>JavaScript</h3>
+            <p>Learn web programming.</p>
+            <button onclick="showCourse('JavaScript')">Explore</button>
+        </div>
+
+        <div class="card">
+            <h3>C Programming</h3>
+            <p>Learn C programming basics.</p>
+            <button onclick="showCourse('C Programming')">Explore</button>
+        </div>
+    </div>
+</section>
+
+<section id="notes">
+    <h2>Study Materials 📖</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>HTML Notes</h3>
+            <p>HTML basics and tags.</p>
+            <button onclick="showCourse('HTML Notes')">View</button>
+        </div>
+        <div class="card">
+            <h3>CSS Notes</h3>
+            <p>CSS properties and styles.</p>
+            <button onclick="showCourse('CSS Notes')">View</button>
+        </div>
+        <div class="card">
+            <h3>C Notes</h3>
+            <p>C programming concepts.</p>
+            <button onclick="showCourse('C Notes')">View</button>
+        </div>
+    </div>
+</section>
+
+<section id="quiz">
+    <h2>Quick Learning Quiz 🧠</h2>
+    <h3 id="question">Loading...</h3>
+    <div id="options"></div>
+    <p id="result"></p>
+    <button onclick="nextQuestion()">Next Question</button>
+</section>
+
+<footer>
+    <p>© 2026 StudyHub | Learn Today, Lead Tomorrow.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
