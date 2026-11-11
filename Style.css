@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f5ff;
+    color: #172554;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    color: #60a5fa;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #60a5fa;
+}
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #6366f1);
+    color: white;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 12px 22px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1e40af;
+}
+
+.hero button {
+    background: #60a5fa;
+    color: #172554;
+}
+
+section {
+    padding: 45px 8%;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px #00000012;
+}
+
+.card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #64748b;
+    margin-bottom: 18px;
+}
+
+#quiz {
+    background: #dbeafe;
+    margin: 30px 8%;
+    border-radius: 15px;
+}
+
+#options button {
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    margin: 10px auto;
+    background: white;
+    color: #172554;
+    border: 1px solid #2563eb;
+}
+
+#options button:hover {
+    background: #bfdbfe;
+}
+
+#result {
+    margin: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
